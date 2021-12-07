@@ -34,7 +34,7 @@ h2 {
   box-shadow: 2px 2px 10px #FFEED0;
   width: 100%;
   height: 140px;
-  font-size: 28px;
+  font-size: 25px;
   font-family: "JetBrains Mono", monospace;
   z-index: 10000;
   position: fixed;
@@ -166,16 +166,7 @@ h2 {
   padding-left: 40px;
 }
 
-.nav-buttons a {
-  text-decoration: none;
-  color: #FFEED0;
-  margin-right: 15px;
-  text-shadow: 1px 1px 0.4px black;
-  line-height: 2;
-  position: relative;
-  top: 50px;
-  font-size: 20px;
-}
+
 
 .nav-buttons a {
   text-decoration: none;
@@ -185,6 +176,7 @@ h2 {
   line-height: 2;
   position: relative;
   top: 50px;
+  font-size:20px
 }
 
 .nav ul {
@@ -605,38 +597,49 @@ h2 {
 /* top button*/
 
 .footer {
-  height: 70px;
+  height: 150px;
   background: #403A3A;
   text-align: center;
   margin-top: 40px;
   color: #FFEED0;
-  display:flex
-}
-
-.footer__copyright {
-  margin:auto
-}
-
-
-.footer__about-img-container {
-  margin-top:20px;
-  margin-right:20px
-}
-
-.footer__about-img {
-  width: 40px;
-  position: relative;
-  float:right;
+  display:flex;
+  flex-direction:column;
   
 }
 
-.footer__citation-img-container {
-  margin-top:10px;
-  margin-left:20px
+.footer__links {
+  display:flex;
+  justify-content:space-evenly;
+  background:#5c5b5b;
+  height:90px;
+  align-items:center;
+  border-bottom: 1px solid #ccc
 }
 
-.footer__citation-img {
+.footer__copyright {
+  margin:auto;
+  
+}
+
+
+
+.footer__about-img {
   width: 50px;
+  position: relative;
+ 
+  
+}
+
+
+
+.footer__code-img {
+  width:40px;
+}
+
+
+
+.footer__citation-img {
+  width: 45px;
 
   
 }
@@ -1803,6 +1806,158 @@ Recycling css
 }
 
 
+.cycle-plan-container {
+  padding:40px;
+  margin:20px 0px;
+  border-radius:5px
+  
+}
+
+.cycle-plan-container h3 {
+  text-align:center;
+  font-size:30px;
+  margin-bottom:20px;
+  text-shadow: 1px 1px 2px #ccc
+  
+}
+
+.cycle-plan-container h4 {
+  margin-bottom:20px;
+  font-size:24px;
+}
+
+.cycle-plan__plan-1 {
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  margin-bottom:20px
+}
+
+.cycle-plan__plan-1-text {
+  flex:4;
+  min-width:300px;
+  margin-bottom:20px;
+  margin-right:20px
+}
+
+.cycle-plan__plan-1-img-container {
+  flex:1;
+  min-width:100px;
+  max-width:150px;
+  margin:auto
+}
+
+.cycle-plan__plan-1-img {
+  width:100%;
+  margin-right:20px;
+  margin-bottom:20px
+  
+}
+
+.cycle-plan__plan-2 {
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+   margin-bottom:20px
+}
+
+.cycle-plan__plan-2-text {
+  flex:4;
+  min-width:300px;
+  margin-bottom:20px;
+  margin-right:20px
+}
+
+.cycle-plan__plan-2-img-container {
+  flex:1;
+  min-width:100px;
+  max-width:150px;
+  margin:auto
+}
+
+.cycle-plan__plan-2-img {
+    width:100%;
+  margin-right:20px;
+  margin-bottom:20px
+}
+
+
+.cycle-plan__plan-3{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+   margin-bottom:20px
+}
+
+.cycle-plan__plan-3-text {
+  flex:4;
+  min-width:300px;
+  margin-bottom:20px;
+  margin-right:20px
+}
+
+.cycle-plan__plan-3-img-container {
+  flex:1;
+  min-width:100px;
+  max-width:200px;
+  margin:auto
+}
+
+.cycle-plan__plan-3-img {
+    width:100%;
+  margin-right:20px;
+  margin-bottom:20px
+}
+
+
+.cycle-plan__plan-4 {
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+   margin-bottom:0px
+}
+
+.cycle-plan__plan-4-text {
+  flex:4;
+  min-width:300px;
+  margin-bottom:20px;
+  margin-right:20px
+}
+
+.cycle-plan__plan-4-img-container {
+  flex:1;
+  min-width:100px;
+  max-width:200px;
+  margin:auto
+}
+
+.cycle-plan__plan-4-img {
+   width:100%;
+  margin-right:20px;
+  margin-bottom:20px
+}
+
+
+.cycle-plan__results {
+  margin-top:60px;
+  box-shadow:4px 4px 15px black;
+  border-radius:10px;
+  background: linear-gradient(to bottom left, #75ff6e, #66DDAA);
+  padding:20px;
+  height:100%;
+  text-align:center;
+  outline: 5px solid #66DDAA;
+}
+
+.cycle-plan__results h3 {
+  font-size:24px;
+  margin-bottom:20px;
+  color:white;
+}
+
+.cycle-plan__results-text {
+  margin-bottom:40px
+}
 
 /* about us  */
 
@@ -1861,10 +2016,17 @@ Recycling css
 /* cards */
 
 .about__members-container h3 {
-  font-size:24px;
-  color:;
-  margin:10px
+  font-size:29px;
+  color:#66DDAA;
+  margin:10px;
+  text-shadow:1px 1px 15px #888
 } 
+
+.about__members-container h4 {
+  margin-left:10px;
+  color:#777;
+  font-size:18px
+}
 
 /* hugo */
 
@@ -1888,7 +2050,6 @@ Recycling css
 
 .about__members-hugo-text-container {
   background: #F2E1F0;
-  box-shadow: 2px 2px 15px black;
   height:200px;
   position:relative;
   min-width:300px;
@@ -1898,6 +2059,7 @@ Recycling css
   padding:20px;
   margin-bottom:40px;
   border-radius:10px;
+  box-shadow: #BBDEFB 5px 10px 0 0;
 }
 
 .about__members-hugo-text p {
@@ -1931,7 +2093,7 @@ Recycling css
 
 .about__members-ian-text-container {
   background: #F2E1F0;
-  box-shadow: 2px 2px 15px black;
+  box-shadow: #BBDEFB 5px 10px 0 0;
   height:200px;
   position:relative;
   min-width:300px;
@@ -1978,7 +2140,7 @@ Recycling css
 
 .about__members-evan-text-container {
   background: #F2E1F0;
-  box-shadow: 2px 2px 15px black;
+  box-shadow: #BBDEFB 5px 10px 0 0;
   height:200px;
   position:relative;
   min-width:300px;
@@ -2022,7 +2184,7 @@ Recycling css
 
 .about__members-brendan-text-container {
   background: #F2E1F0;
-  box-shadow: 2px 2px 15px black;
+    box-shadow: #BBDEFB 5px 10px 0 0;
   height:200px;
   position:relative;
   min-width:300px;
@@ -2045,3 +2207,16 @@ Recycling css
 }
 
 
+.citation-page-container h1 {
+  margin-top:240px;
+  margin-bottom: 20px;
+  text-align:center;
+  
+}
+
+.citations-text-container {
+  text-align:center;
+  height:100vh;
+  margin-bottom:40px
+    
+}
