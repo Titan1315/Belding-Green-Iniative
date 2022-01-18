@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -23,15 +24,15 @@ h2 {
   margin: 20px 0px 40px 0;
   font-family: "Ubuntu", sans-serif;
   font-size: 32px;
-  color: #28BB94;
+  color: #28bb94;
 }
 /* index css */
 
 /* nav menu */
 
 .nav-index {
-  background: #66DDAA;
-  box-shadow: 2px 2px 10px #FFEED0;
+  background: #66ddaa;
+  box-shadow: 2px 2px 10px #ffeed0;
   width: 100%;
   height: 140px;
   font-size: 25px;
@@ -40,11 +41,11 @@ h2 {
   position: fixed;
   margin-top: -140px;
   font-weight: bold;
-  border-bottom: 3px solid #FFEED0;
+  border-bottom: 3px solid #ffeed0;
 }
 
 .nav {
-  background: #66DDAA;
+  background: #66ddaa;
   box-shadow: 2px 2px 3px black;
   width: 100%;
   height: 140px;
@@ -101,7 +102,7 @@ h2 {
   position: fixed;
   top: 143px;
   bottom: 0;
-  background: #28BB94;
+  background: #28bb94;
   width: 100%;
   display: flex;
   left: 0;
@@ -121,7 +122,7 @@ h2 {
 
 .mobile-buttons a {
   text-decoration: none;
-  color: #FFEED0;
+  color: #ffeed0;
   margin-right: 15px;
   text-shadow: 1px 1px 0.4px grey;
   position: relative;
@@ -129,7 +130,7 @@ h2 {
 }
 
 .mobile-buttons a:hover {
-  color: #28BB94;
+  color: #28bb94;
   transition: all 0.3s;
 }
 
@@ -140,7 +141,7 @@ h2 {
   bottom: -10px;
   width: 100%;
   height: 3px;
-  background-color: #FEFEFE;
+  background-color: #fefefe;
   transform-origin: bottom right;
   transition: transform 0.5s ease;
   transform: scaleX(0);
@@ -166,17 +167,15 @@ h2 {
   padding-left: 40px;
 }
 
-
-
 .nav-buttons a {
   text-decoration: none;
-  color: #FFEED0;
+  color: #ffeed0;
   margin-right: 15px;
   text-shadow: 1px 1px 0.4px grey;
   line-height: 2;
   position: relative;
   top: 50px;
-  font-size:20px
+  font-size: 20px;
 }
 
 .nav ul {
@@ -197,18 +196,18 @@ h2 {
 }
 
 .nav-buttons a:hover {
-  color: #28BB94;
+  color: #28bb94;
   transition: all 0.3s;
 }
 
-.nav-buttons a::after {
+.nav-buttons a::after { 
   content: "";
   position: absolute;
   left: 0px;
   bottom: -10px;
   width: 100%;
   height: 3px;
-  background-color: #FEFEFE;
+  background-color: #fefefe;
   transform-origin: bottom right;
   transition: transform 0.5s ease;
   transform: scaleX(0);
@@ -223,10 +222,18 @@ h2 {
 
 .article-container {
   margin: auto;
+  box-sizing: border-box;
+  padding: 1em;
+  width: 100%;
+}
+
+/*.article-container {
+  margin: auto;
+  box-sizing: border-box;
   padding: 60px;
   width: 50%;
 }
-
+*/
 /* first header */
 
 .maintitle {
@@ -561,7 +568,7 @@ h2 {
 #top-button-id {
   width: 80px;
   height: 70px;
-  background: #66DDAA;
+  background: #66ddaa;
   border-radius: 20%;
   font-family: "Mochiy Pop P One", sans-serif;
   color: white;
@@ -573,14 +580,14 @@ h2 {
   z-index: 100000;
 }
 
-@media only screen and (max-width: 1340px) {
+@media only screen and (min-width: 600px) {
   .article-container {
-    width: 80%;
+    width: 60%;
   }
 }
 
 #top-button-id:hover {
-  background: #28BB94;
+  background: #28bb94;
   transition: background 0.3s;
 }
 
@@ -598,52 +605,57 @@ h2 {
 
 .footer {
   height: 150px;
-  background: #403A3A;
+  background: #403a3a;
   text-align: center;
   margin-top: 40px;
-  color: #FFEED0;
-  display:flex;
-  flex-direction:column;
-  
+  color: #ffeed0;
+  display: flex;
+  flex-direction: column;
 }
 
 .footer__links {
-  display:flex;
-  justify-content:space-evenly;
-  background:#5c5b5b;
-  height:90px;
-  align-items:center;
-  border-bottom: 1px solid #ccc
+  display: flex;
+  justify-content: space-evenly;
+  background: #5c5b5b;
+  height: 90px;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
 }
 
 .footer__copyright {
-  margin:auto;
-  
+  margin: auto;
 }
-
-
 
 .footer__about-img {
   width: 50px;
   position: relative;
- 
-  
 }
 
-
+.footer__about-img:hover {
+  transform: scale(1.05);
+  opacity: 70%;
+  transition: all 0.2s;
+}
 
 .footer__code-img {
-  width:40px;
+  width: 40px;
 }
 
-
+.footer__code-img:hover {
+  transform: scale(1.05);
+  opacity: 70%;
+  transition: all 0.2s;
+}
 
 .footer__citation-img {
   width: 45px;
-
-  
 }
 
+.footer__citation-img:hover {
+  transform: scale(1.05);
+  opacity: 70%;
+  transition: all 0.2s;
+}
 
 /* Transportation css */
 
@@ -655,7 +667,7 @@ h2 {
 .article-container-publict h2 {
   font-family: "Ubuntu", sans-serif;
   font-size: 32px;
-  color: #28BB94;
+  color: #28bb94;
 }
 
 .article-container-publict h3 {
@@ -698,13 +710,13 @@ h2 {
   min-height: 400px;
   max-width: 350px;
   min-width: 300px;
-  background: radial-gradient(#f2e1f0 40%, #66DDAA);
+  background: radial-gradient(#f2e1f0 40%, #66ddaa);
   margin: 20px;
   text-align: center;
   box-shadow: 2px 3px 15px black;
   flex: 1;
   border-radius: 5px;
-  outline: 2px solid #66DDAA;
+  outline: 2px solid #66ddaa;
 }
 
 .publict-cards__bus-img {
@@ -722,7 +734,7 @@ h2 {
 
 .publict-cards__bus-price {
   font-size: 28px;
-  color: #2EB3BD;
+  color: #2eb3bd;
   font-weight: 600;
   font-family: "Exo", sans-serif;
   text-shadow: 1px 2px 19px white;
@@ -760,14 +772,14 @@ h2 {
   min-height: 400px;
   max-width: 350px;
   min-width: 300px;
-  background: radial-gradient(#f2e1f0 30%, #F7CF53);
+  background: radial-gradient(#f2e1f0 30%, #f7cf53);
   margin: 20px;
   text-align: center;
   box-shadow: 2px 3px 15px black;
   flex: 1;
   margin: auto;
   border-radius: 5px;
-  outline: 2px solid #F7CF53;
+  outline: 2px solid #f7cf53;
 }
 
 .publict-cards__taxi-img-container {
@@ -790,10 +802,10 @@ h2 {
 
 .publict-cards__taxi-price {
   font-size: 28px;
-  color: #F7CF53;
+  color: #f7cf53;
   font-weight: 600;
   font-family: "Exo", sans-serif;
-  text-shadow: 1px 2px 19px #403A3A;
+  text-shadow: 1px 2px 19px #403a3a;
   margin-top: 15px;
 }
 
@@ -828,14 +840,14 @@ h2 {
   min-height: 400px;
   max-width: 350px;
   min-width: 300px;
-  background: radial-gradient(#f2e1f0 40%, #A3CED4);
+  background: radial-gradient(#f2e1f0 40%, #a3ced4);
   margin: 20px;
   text-align: center;
   box-shadow: 2px 3px 15px black;
   flex: 1;
   margin: auto;
   border-radius: 6px;
-  outline: 2px solid #A3CED4;
+  outline: 2px solid #a3ced4;
 }
 
 .publict-cards__gondola-img-container {
@@ -861,7 +873,7 @@ h2 {
   color: #537983;
   font-weight: 600;
   font-family: "Exo", sans-serif;
-  text-shadow: 1px 3px 19px #403A3A;
+  text-shadow: 1px 3px 19px #403a3a;
   margin-top: 15px;
 }
 
@@ -1097,7 +1109,7 @@ Energy css
 }
 
 .energy-cards__solar {
-  background: #403A3A;
+  background: #403a3a;
   width: 750px;
   min-width: 500px;
   height: 200px;
@@ -1106,7 +1118,7 @@ Energy css
   text-align: center;
   margin: 20px;
   border-radius: 10px;
-  color: #FFEED0;
+  color: #ffeed0;
 }
 
 @media only screen and (max-width: 990px) {
@@ -1131,7 +1143,7 @@ Energy css
   margin: 20px;
   position: absolute;
   text-shadow: 1px 2px 5px #888;
-  color: #28BB94;
+  color: #28bb94;
 }
 
 .energy-cards__solar-img {
@@ -1147,14 +1159,14 @@ Energy css
 .energy-cards__solar-initial-cost {
   margin-bottom: 20px;
   font-weight: bold;
-  color: #FFEED0;
+  color: #ffeed0;
 }
 
 .energy-cards__solar-price {
   top: -10px;
   position: relative;
   font-size: 28px;
-  color: #66DDAA;
+  color: #66ddaa;
   font-weight: 600;
   font-family: "Exo", sans-serif;
   text-shadow: 1px 2px 30px #fff5f7;
@@ -1165,11 +1177,11 @@ Energy css
   font-size: 18px;
   margin: 20px 0px;
   flex: 1;
-  color: #FFEED0;
+  color: #ffeed0;
 }
 
 .energy-cards__lamps {
-  background: #403A3A;
+  background: #403a3a;
   width: 750px;
   min-width: 500px;
   height: 200px;
@@ -1178,7 +1190,7 @@ Energy css
   text-align: center;
   margin: 20px;
   border-radius: 10px;
-  color: #FFEED0;
+  color: #ffeed0;
 }
 
 @media only screen and (max-width: 990px) {
@@ -1203,7 +1215,7 @@ Energy css
   margin: 20px;
   position: absolute;
   text-shadow: 1px 2px 5px #888;
-  color: #28BB94;
+  color: #28bb94;
 }
 
 .energy-cards__lamps-img {
@@ -1225,7 +1237,7 @@ Energy css
   top: -10px;
   position: relative;
   font-size: 28px;
-  color: #66DDAA;
+  color: #66ddaa;
   font-weight: 600;
   font-family: "Exo", sans-serif;
   text-shadow: 1px 2px 30px #fff5f7;
@@ -1239,7 +1251,7 @@ Energy css
 }
 
 .energy-cards__charger {
-  background: #403A3A;
+  background: #403a3a;
   width: 750px;
   min-width: 500px;
   height: 200px;
@@ -1247,7 +1259,7 @@ Energy css
   box-shadow: 1px 4px 12px black;
   text-align: center;
   margin: 20px;
-  color: #FFEED0;
+  color: #ffeed0;
   border-radius: 10px;
 }
 
@@ -1279,7 +1291,7 @@ Energy css
   margin: 20px;
   position: absolute;
   text-shadow: 1px 2px 5px #888;
-  color: #28BB94;
+  color: #28bb94;
 }
 
 .energy-cards__charger-img {
@@ -1301,7 +1313,7 @@ Energy css
   top: -10px;
   position: relative;
   font-size: 28px;
-  color: #66DDAA;
+  color: #66ddaa;
   font-weight: 600;
   font-family: "Exo", sans-serif;
   text-shadow: 1px 1px 30px #fff5f7;
@@ -1318,6 +1330,7 @@ Energy css
 
 .energy-conclusion__img {
   width: 100%;
+  filter: drop-shadow(1px 1px 15px black);
 }
 .energy-conclusion__header-text {
   text-align: center;
@@ -1346,7 +1359,7 @@ Energy css
 .article-container-personalt h2 {
   font-family: "Ubuntu", sans-serif;
   font-size: 32px;
-  color: #28BB94;
+  color: #28bb94;
 }
 
 .article-container-personalt h3 {
@@ -1359,7 +1372,6 @@ Energy css
 @media only screen and (max-width: 1340px) {
   .article-container-personalt {
     width: 80%;
-    margin
   }
 }
 
@@ -1437,7 +1449,7 @@ Energy css
   font-size: 26px;
   font-weight: 800;
   font-family: "JetBrains Mono", monospace;
-  color: #66DDAA;
+  color: #66ddaa;
 }
 
 .increase-percentage-section h4 {
@@ -1462,7 +1474,7 @@ Energy css
 }
 
 .increase-percentage__bikes h4 {
-  color: #66DDAA;
+  color: #66ddaa;
 }
 
 .percentage-bar__bikes {
@@ -1481,9 +1493,9 @@ Energy css
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #28BB94;
+  background-color: #28bb94;
   transform: translateX(-70%);
-  box-shadow: 2px 2px 15px #28BB94;
+  box-shadow: 2px 2px 15px #28bb94;
 }
 
 .percentage-bar__scooters {
@@ -1501,9 +1513,9 @@ Energy css
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #28BB94;
+  background-color: #28bb94;
   transform: translateX(-90%);
-  box-shadow: 2px 2px 15px #28BB94;
+  box-shadow: 2px 2px 15px #28bb94;
 }
 
 .increase-percentage {
@@ -1515,7 +1527,7 @@ Energy css
 }
 
 .increase-percentage__scooters-container h4 {
-  color: #66DDAA;
+  color: #66ddaa;
 }
 
 /* personal transportation cards */
@@ -1577,7 +1589,7 @@ Energy css
 
 .personal-cards__bikes h3 {
   margin: 0px 0px;
-  color: #FFEED0;
+  color: #ffeed0;
   position: absolute;
   top: -230px;
   left: 100px;
@@ -1603,7 +1615,7 @@ Energy css
   top: -10px;
   position: relative;
   font-size: 28px;
-  color: #403A3A;
+  color: #403a3a;
   font-weight: 600;
   font-family: "Exo", sans-serif;
   text-shadow: 1px 2px 20px black;
@@ -1650,7 +1662,7 @@ Energy css
 
 .personal-cards__scooters h3 {
   margin: 30px 0px;
-  color: #FFEED0 !important;
+  color: #ffeed0 !important;
   position: absolute;
   top: -260px;
   left: 80px;
@@ -1671,7 +1683,7 @@ Energy css
   top: -10px;
   position: relative;
   font-size: 28px;
-  color: #403A3A;
+  color: #403a3a;
   font-weight: 600;
   font-family: "Exo", sans-serif;
   text-shadow: 1px 2px 20px black;
@@ -1805,164 +1817,157 @@ Recycling css
   padding: 15px;
 }
 
-
 .cycle-plan-container {
-  padding:40px;
-  margin:20px 0px;
-  border-radius:5px
-  
+  padding: 40px;
+  margin: 20px 0px;
+  border-radius: 5px;
 }
 
 .cycle-plan-container h3 {
-  text-align:center;
-  font-size:30px;
-  margin-bottom:20px;
-  text-shadow: 1px 1px 2px #ccc
-  
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 2px #ccc;
 }
 
 .cycle-plan-container h4 {
-  margin-bottom:20px;
-  font-size:24px;
+  margin-bottom: 20px;
+  font-size: 24px;
 }
 
 .cycle-plan__plan-1 {
-  display:flex;
-  flex-wrap:wrap;
-  align-items:center;
-  margin-bottom:20px
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 .cycle-plan__plan-1-text {
-  flex:4;
-  min-width:300px;
-  margin-bottom:20px;
-  margin-right:20px
+  flex: 4;
+  min-width: 300px;
+  margin-bottom: 20px;
+  margin-right: 20px;
 }
 
 .cycle-plan__plan-1-img-container {
-  flex:1;
-  min-width:100px;
-  max-width:150px;
-  margin:auto
+  flex: 1;
+  min-width: 100px;
+  max-width: 150px;
+  margin: auto;
 }
 
 .cycle-plan__plan-1-img {
-  width:100%;
-  margin-right:20px;
-  margin-bottom:20px
-  
+  width: 100%;
+  margin-right: 20px;
+  margin-bottom: 20px;
 }
 
 .cycle-plan__plan-2 {
-  display:flex;
-  flex-wrap:wrap;
-  align-items:center;
-   margin-bottom:20px
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 .cycle-plan__plan-2-text {
-  flex:4;
-  min-width:300px;
-  margin-bottom:20px;
-  margin-right:20px
+  flex: 4;
+  min-width: 300px;
+  margin-bottom: 20px;
+  margin-right: 20px;
 }
 
 .cycle-plan__plan-2-img-container {
-  flex:1;
-  min-width:100px;
-  max-width:150px;
-  margin:auto
+  flex: 1;
+  min-width: 100px;
+  max-width: 150px;
+  margin: auto;
 }
 
 .cycle-plan__plan-2-img {
-    width:100%;
-  margin-right:20px;
-  margin-bottom:20px
+  width: 100%;
+  margin-right: 20px;
+  margin-bottom: 20px;
 }
 
-
-.cycle-plan__plan-3{
-  display:flex;
-  flex-wrap:wrap;
-  align-items:center;
-   margin-bottom:20px
+.cycle-plan__plan-3 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 .cycle-plan__plan-3-text {
-  flex:4;
-  min-width:300px;
-  margin-bottom:20px;
-  margin-right:20px
+  flex: 4;
+  min-width: 300px;
+  margin-bottom: 20px;
+  margin-right: 20px;
 }
 
 .cycle-plan__plan-3-img-container {
-  flex:1;
-  min-width:100px;
-  max-width:200px;
-  margin:auto
+  flex: 1;
+  min-width: 100px;
+  max-width: 200px;
+  margin: auto;
 }
 
 .cycle-plan__plan-3-img {
-    width:100%;
-  margin-right:20px;
-  margin-bottom:20px
+  width: 100%;
+  margin-right: 20px;
+  margin-bottom: 20px;
 }
 
-
 .cycle-plan__plan-4 {
-  display:flex;
-  flex-wrap:wrap;
-  align-items:center;
-   margin-bottom:0px
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 0px;
 }
 
 .cycle-plan__plan-4-text {
-  flex:4;
-  min-width:300px;
-  margin-bottom:20px;
-  margin-right:20px
+  flex: 4;
+  min-width: 300px;
+  margin-bottom: 20px;
+  margin-right: 20px;
 }
 
 .cycle-plan__plan-4-img-container {
-  flex:1;
-  min-width:100px;
-  max-width:200px;
-  margin:auto
+  flex: 1;
+  min-width: 100px;
+  max-width: 200px;
+  margin: auto;
 }
 
 .cycle-plan__plan-4-img {
-   width:100%;
-  margin-right:20px;
-  margin-bottom:20px
+  width: 100%;
+  margin-right: 20px;
+  margin-bottom: 20px;
 }
 
-
 .cycle-plan__results {
-  margin-top:60px;
-  box-shadow:4px 4px 15px black;
-  border-radius:10px;
-  background: linear-gradient(to bottom left, #75ff6e, #66DDAA);
-  padding:20px;
-  height:100%;
-  text-align:center;
-  outline: 5px solid #66DDAA;
+  margin-top: 60px;
+  box-shadow: 4px 4px 15px black;
+  border-radius: 10px;
+  background: linear-gradient(to bottom left, #75ff6e, #66ddaa);
+  padding: 20px;
+  height: 100%;
+  text-align: center;
+  outline: 5px solid #66ddaa;
 }
 
 .cycle-plan__results h3 {
-  font-size:24px;
-  margin-bottom:20px;
-  color:white;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: white;
 }
 
 .cycle-plan__results-text {
-  margin-bottom:40px
+  margin-bottom: 40px;
 }
 
 /* about us  */
 
 .about__first-section-text h1 b {
-  color:rgb(102,221,170)
+  color: rgb(102, 221, 170);
 }
 
 .article-container-about {
@@ -1979,31 +1984,25 @@ Recycling css
 
 .article-container-about h1 {
   text-align: center;
-  font-size: 36px;
-  margin-bottom: 20px;
+  font-size: 56px;
+  margin-bottom: 40px;
 }
 
-
-
-
 .about__first-section {
-  display:flex;
-  flex-wrap:wrap;
-
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .about__first-section-img-container {
- flex:2;
-  margin:auto;
-  text-align:center
+  flex: 2;
+  margin: auto;
+  text-align: center;
 }
 
 .about__first-section-img {
-  width:100%;
-  min-width:500px;
-  margin:auto;
-  
-  
+  width: 100%;
+  min-width: 500px;
+  margin: auto;
 }
 
 .about__first-section-text {
@@ -2012,211 +2011,201 @@ Recycling css
   margin: auto;
 }
 
-
 /* cards */
 
 .about__members-container h3 {
-  font-size:29px;
-  color:#66DDAA;
-  margin:10px;
-  text-shadow:1px 1px 15px #888
-} 
+  font-size: 29px;
+  color: #66ddaa;
+  margin: 10px;
+  text-shadow: 1px 1px 15px #888;
+}
 
 .about__members-container h4 {
-  margin-left:10px;
-  color:#777;
-  font-size:18px
+  margin-left: 10px;
+  color: #777;
+  font-size: 18px;
 }
 
 /* hugo */
 
 .about__members-hugo-container {
-  display:flex;
-  flex-wrap:wrap;
-  margin:80px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 80px 0px;
 }
 
 .about__members-hugo-img-container {
-  flex:1;
-  text-align:center
+  flex: 1;
+  text-align: center;
 }
 
 .about__members-hugo-img {
-  width:100%;
-  min-width:400px;  
-  max-width:400px;
-  
+  width: 100%;
+  min-width: 400px;
+  max-width: 400px;
 }
 
 .about__members-hugo-text-container {
-  background: #F2E1F0;
-  height:200px;
-  position:relative;
-  min-width:300px;
-  flex:2;
-  top:80px;
-  left:-20px;
-  padding:20px;
-  margin-bottom:40px;
-  border-radius:10px;
-  box-shadow: #BBDEFB 5px 10px 0 0;
+  background: #f2e1f0;
+  height: 200px;
+  position: relative;
+  min-width: 300px;
+  flex: 2;
+  top: 80px;
+  left: -20px;
+  padding: 20px;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  box-shadow: #bbdefb 5px 10px 0 0;
+  outline: 3px solid #bbdefb;
 }
 
 .about__members-hugo-text p {
-  margin-top:40px
+  margin-top: 40px;
 }
 
-
 .about__members-hugo-text-p-container {
-  text-align:center;
-  margin:auto;
+  text-align: center;
+  margin: auto;
 }
 
 /* ian  */
 
 .about__members-ian-container {
-  display:flex;
-  flex-wrap:wrap-reverse;
-  margin:80px 0px;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  margin: 80px 0px;
 }
 
 .about__members-ian-img-container {
-  flex:1;
-  text-align:center
+  flex: 1;
+  text-align: center;
 }
 
 .about__members-ian-img {
-  width:100%;
-  min-width:400px;  
-  max-width:400px;
+  width: 100%;
+  min-width: 400px;
+  max-width: 400px;
 }
 
 .about__members-ian-text-container {
-  background: #F2E1F0;
-  box-shadow: #BBDEFB 5px 10px 0 0;
-  height:200px;
-  position:relative;
-  min-width:300px;
-  flex:2;
-  top:70px;
-  left:20px;
-  padding:20px;
-  margin-bottom:40px;
-  border-radius:10px;
+  background: #f2e1f0;
+  box-shadow: #bbdefb 5px 10px 0 0;
+  height: 200px;
+  position: relative;
+  min-width: 300px;
+  flex: 2;
+  top: 70px;
+  left: 20px;
+  padding: 20px;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  outline: 3px solid #bbdefb;
 }
-
 
 .about__members-ian-text p {
-  margin-top:40px
+  margin-top: 40px;
 }
-
 
 .about__members-ian-text-p-container {
-  text-align:center;
-  margin:auto;
+  text-align: center;
+  margin: auto;
 }
-
-
 
 /* evan */
 
-
 .about__members-evan-container {
-  display:flex;
-  flex-wrap:wrap;
-  margin:80px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 80px 0px;
 }
 
 .about__members-evan-img-container {
-  flex:1;
-  text-align:center
+  flex: 1;
+  text-align: center;
 }
 
 .about__members-evan-img {
-  width:100%;
-  min-width:400px;  
-  max-width:400px;
+  width: 100%;
+  min-width: 400px;
+  max-width: 400px;
 }
 
 .about__members-evan-text-container {
-  background: #F2E1F0;
-  box-shadow: #BBDEFB 5px 10px 0 0;
-  height:200px;
-  position:relative;
-  min-width:300px;
-  flex:2;
-  top:80px;
-  left:-20px;
-  padding:20px;
-  margin-bottom:40px;
-  border-radius:10px;
+  background: #f2e1f0;
+  box-shadow: #bbdefb 5px 10px 0 0;
+  height: 200px;
+  position: relative;
+  min-width: 300px;
+  flex: 2;
+  top: 80px;
+  left: -20px;
+  padding: 20px;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  outline: 3px solid #bbdefb;
 }
 
 .about__members-evan-text p {
-  margin-top:40px
+  margin-top: 40px;
 }
-
 
 .about__members-evan-text-p-container {
-  text-align:center;
-  margin:auto;
+  text-align: center;
+  margin: auto;
 }
-
 
 /*  brendan */
 
 .about__members-brendan-container {
-  display:flex;
-  flex-wrap:wrap-reverse;
-  margin:80px 0px;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  margin: 80px 0px;
 }
 
 .about__members-brendan-img-container {
-  flex:1;
-  text-align:center
+  flex: 1;
+  text-align: center;
 }
 
 .about__members-brendan-img {
-  width:100%;
-  min-width:400px;  
-  max-width:400px;
+  width: 100%;
+  min-width: 400px;
+  max-width: 400px;
 }
 
 .about__members-brendan-text-container {
-  background: #F2E1F0;
-    box-shadow: #BBDEFB 5px 10px 0 0;
-  height:200px;
-  position:relative;
-  min-width:300px;
-  flex:2;
-  top:80px;
-  left:20px;
-  margin-bottom:100px;
-  padding:20px;
-  border-radius:10px;
+  background: #f2e1f0;
+  box-shadow: #bbdefb 5px 10px 0 0;
+  height: 200px;
+  position: relative;
+  min-width: 300px;
+  flex: 2;
+  top: 80px;
+  left: 20px;
+  margin-bottom: 100px;
+  padding: 20px;
+  border-radius: 10px;
+  outline: 3px solid #bbdefb;
 }
 
 .about__members-brendan-text p {
-  margin-top:40px
+  margin-top: 40px;
 }
-
 
 .about__members-brendan-text-p-container {
-  text-align:center;
-  margin:auto;
+  text-align: center;
+  margin: auto;
 }
 
-
 .citation-page-container h1 {
-  margin-top:240px;
+  margin-top: 240px;
   margin-bottom: 20px;
-  text-align:center;
-  
+  text-align: center;
 }
 
 .citations-text-container {
-  text-align:center;
-  height:100vh;
-  margin-bottom:40px
-    
+  text-align: center;
+  height: 100vh;
+  margin-bottom: 40px;
 }
