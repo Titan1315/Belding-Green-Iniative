@@ -10,7 +10,10 @@
       href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap"
       rel="stylesheet"
     />
-
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montagu+Slab&family=Oswald&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Montagu+Slab&display=swap"
       rel="stylesheet"
@@ -26,23 +29,43 @@
     ></script>
     <link
       rel="icon"
-      href="https://cdn.glitch.me/387da31b-af7a-4e1a-92bf-2d58a57f066e%2FEscanciador%20de%20sidra%20(7).png?v=1637671548421"
+      href="https://cdn.glitch.global/387da31b-af7a-4e1a-92bf-2d58a57f066e/Dise%C3%B1o%20sin%20t%C3%ADtulo%20(13).png?v=1642801027170"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap"
+      rel="stylesheet"
     />
   </head>
-  <body>
-    <header class="menu">
-      <nav class="nav-index">
-        <div class="logo-container">
+  <body class="overflow-preloader body">
+    <div class="preloader-container">
+      <div class="lds-heart"><div></div></div>
+    </div>
+
+    <script>
+      window.onload = function () {
+        let loader = document.querySelector(".preloader-container");
+        let body = document.querySelector(".body");
+        let menu = document.querySelector(".nav-index");
+        loader.classList.add("preloader-hidden");
+        body.classList.remove("overflow-preloader");
+        menu.classList.remove("menu-hidden");
+      };
+    </script>
+    <header class="menu menu-index">
+      <nav class="nav-index menu-hidden">
+        <div class="logo-container logo-container-index">
           <a href="/index.html" /><img
-            class="logo"
+            class="logo logo-index"
             alt="logo belding green"
-            src="https://cdn.glitch.me/387da31b-af7a-4e1a-92bf-2d58a57f066e%2FEscanciador%20de%20sidra%20(7).png?v=1637671548421"
+            src="https://cdn.glitch.global/387da31b-af7a-4e1a-92bf-2d58a57f066e/Dise%C3%B1o%20sin%20t%C3%ADtulo%20(13).png?v=1642801027170"
             htef="/index.html"
           />
         </div>
 
-        <div class="nav-buttons">
-          <ul>
+        <div class="nav-buttons nav-buttons-index">
+          <ul id="nav-buttons-index-ul">
             <li>
               <a class="nav__personal" href="/personal.html"
                 >Personal Transportation</a
@@ -59,14 +82,15 @@
             <li><a class="nav__energy" href="/energy.html">Energy</a></li>
           </ul>
         </div>
-        <label for="menu-hamburger" class="hamburger-label" >
-          <img class="hamburger-menu"
-               src="https://cdn.glitch.me/387da31b-af7a-4e1a-92bf-2d58a57f066e%2Ficons8-men%C3%BA.svg?v=1638133452176">
+        <label for="menu-hamburger" class="hamburger-label">
+          <img
+            class="hamburger-menu"
+            src="https://cdn.glitch.me/387da31b-af7a-4e1a-92bf-2d58a57f066e%2Ficons8-men%C3%BA.svg?v=1638133452176"
+          />
         </label>
-        <input type="checkbox" id="menu-hamburger" class="hamburger__input">
-        
-      
-                <div class="mobile-buttons">
+        <input type="checkbox" id="menu-hamburger" class="hamburger__input" />
+
+        <div class="mobile-buttons mobile-buttons-index">
           <ul>
             <li>
               <a class="mobile__personal" href="/personal.html"
@@ -84,98 +108,129 @@
             <li><a class="mobile__energy" href="/energy.html">Energy</a></li>
           </ul>
         </div>
-      
       </nav>
-    </header>
-      
-    <div class="maintitle">
-      <h1>Keep Belding Green!</h1>
+      <!-- hero-->
+      <section class="hero-container container">
+        <div class="hero__shape1"></div>
+        <div class="hero__shape2"></div>
+        <div class="hero__text">
+          <h1 class="hero__text-title">
+            Keep<br />
+            Belding<br />
+            Green!
+          </h1>
 
-      <h3>
-        Reducing our town's carbon footprint
-      </h3>
-    </div>
+          <h3 class="hero__text-subtitle">
+            Reducing our town's <br />carbon footprint
+          </h3>
+        </div>
+
+        <figure class="hero__img-container">
+          <img
+            class="hero__img"
+            src="https://cdn.glitch.global/387da31b-af7a-4e1a-92bf-2d58a57f066e/undraw_friendship_mni7%20(1).svg?v=1642796064557"
+          />
+        </figure>
+      </section>
+
+      <svg
+        class="hero__waves"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+      >
+        <path
+          fill="#fff"
+          fill-opacity="1"
+          d="M0,96L40,122.7C80,149,160,203,240,234.7C320,267,400,277,480,261.3C560,245,640,203,720,176C800,149,880,139,960,149.3C1040,160,1120,192,1200,181.3C1280,171,1360,117,1400,90.7L1440,64L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
+        ></path>
+      </svg>
+      <!--    hero end    -->
+    </header>
+  
+
     <div class="article-container">
       <div class="first-text">
         <div class="first-text__1">
-          Our goal is to study the best ways to reduce the carbon footprint in
-          the Belding area, and in order to achieve this goal we had done a
-          research about 4 main ways to help the environment of our town.
-          <br /><br />These main ways are: Individual Transportation, Energy
-          efficiency, Public Transportation and Recycling. In the individual
-          transportation section we’ve looked about vehicles that could be
-          included in the town and that may reduce the carbon footprint, as well
-          as the public transportation where we’ve looked for the better ways to
-          implement buses and taxis all over Belding.
-        </div>
-        <div class="first-text__2">
-          On the other hand we have the Energy Efficiency and Recycling, which
-          are two good ways to reduce carbon footprint in Belding because the
-          city doesn’t have either a good recycling method or a good energy
-          efficiency and we have discovered how to improve these two elements to
-          make Belding a little bit more green!
+          <p>
+            Our goal is to study the
+            <b>best ways to reduce the carbon footprint</b> in the Belding area,
+            and in order to achieve this goal we had done a research about
+            <b>4 main ways</b> to help the environment of our town.
+            <br /><br />These main ways are:
+            <b
+              >Individual Transportation, Energy efficiency, Public
+              Transportation and Recycling</b
+            >. In the individual transportation section we’ve looked about
+            vehicles that could be included in the town and that may reduce the
+            carbon footprint, as well as the public transportation where we’ve
+            looked for the better ways to implement buses and taxis all over
+            Belding.
+          </p>
+          <br />
+          <p>
+            On the other hand we have the Energy Efficiency and Recycling, which
+            are two good ways to reduce carbon footprint in Belding because the
+            city doesn’t have either a good recycling method or a good energy
+            efficiency and we have discovered <b>how to improve </b>these two
+            elements to make Belding a little bit more green!
+          </p>
         </div>
       </div>
 
       <div class="ideas">
-        <h2>
-          Ideas to reduce the carbon footprint
-        </h2>
+        <h2>Ideas to reduce the carbon footprint</h2>
+        <div class="ideas__cluster-container">
+          <div class="ideas__cluster">
+            <a href="/personal.html"
+              ><div class="ideas__cluster-box1 ideas__cluster-box">
+                <img
+                  src="https://cdn.glitch.me/387da31b-af7a-4e1a-92bf-2d58a57f066e%2Felectric-scooters-6512899_960_720.jpg?v=1637679328746l"
+                />
+                <h3>Personal Transportation</h3>
+              </div></a
+            >
 
-        <div class="ideas__cluster">
-          <a href="/personal.html"
-            ><div class="ideas__cluster-box1 ideas__cluster-box">
-              <img
-                src="https://cdn.glitch.me/387da31b-af7a-4e1a-92bf-2d58a57f066e%2Felectric-scooters-6512899_960_720.jpg?v=1637679328746l"
-              />
-              <h3>Personal Transportation</h3>
-            </div></a
-          >
+            <a href="/recycling.html"
+              ><div class="ideas__cluster-box2 ideas__cluster-box">
+                <img
+                  src="https://cdn.glitch.me/387da31b-af7a-4e1a-92bf-2d58a57f066e%2Fnature-3289812_960_720.jpg?v=1637679006536"
+                />
+                <h3>Recycling</h3>
+              </div></a
+            >
 
-          <a href="/recycling.html"
-            ><div class="ideas__cluster-box2 ideas__cluster-box">
-              <img
-                src="https://cdn.glitch.me/387da31b-af7a-4e1a-92bf-2d58a57f066e%2Fnature-3289812_960_720.jpg?v=1637679006536"
-              />
-              <h3>Recycling</h3>
-            </div></a
-          >
+            <a href="/transportation.html"
+              ><div class="ideas__cluster-box3 ideas__cluster-box">
+                <img
+                  src="https://cdn.glitch.me/387da31b-af7a-4e1a-92bf-2d58a57f066e%2Fbus-2730653_960_720.jpg?v=1637678836913"
+                />
 
-          <a href="/transportation.html"
-            ><div class="ideas__cluster-box3 ideas__cluster-box">
-              <img
-                src="https://cdn.glitch.me/387da31b-af7a-4e1a-92bf-2d58a57f066e%2Fbus-2730653_960_720.jpg?v=1637678836913"
-              />
+                <h3>Public Transportation</h3>
+              </div></a
+            >
 
-              <h3>Public Transportation</h3>
-            </div></a
-          >
-
-          <a href="/energy.html"
-            ><div class="ideas__cluster-box4 ideas__cluster-box">
-              <img
-                src="https://cdn.glitch.me/387da31b-af7a-4e1a-92bf-2d58a57f066e%2Flight-bulb-2632075_960_720%20(1).jpg?v=1637679228614"
-              />
-              <h3>Energy Save</h3>
-            </div></a
-          >
+            <a href="/energy.html"
+              ><div class="ideas__cluster-box4 ideas__cluster-box">
+                <img
+                  src="https://cdn.glitch.me/387da31b-af7a-4e1a-92bf-2d58a57f066e%2Flight-bulb-2632075_960_720%20(1).jpg?v=1637679228614"
+                />
+                <h3>Energy Save</h3>
+              </div></a
+            >
+          </div>
         </div>
       </div>
-      <div>
-        <h2>
-          Percentage of carbon footprint emissors in the US
-        </h2>
+      <div class="index__percentage-container">
+        <h2>Percentage of carbon footprint emissors in the US</h2>
         <div class="percentage-container">
           <div class="percentage__text">
             <p>
-              There are a lot of different elements that produce carbon
-              footprint in the US that can be reduced in an easy way if we put
-              the effort that is needed, the principals sources of carbon
-              footprints are:
+              There are many different elements that produce a carbon footprint
+              in the US that can be easily reduced if we put the necessary
+              effort. The main sources of carbon footprint are:
             </p>
             <br />
-            
-              
+
             <ul>
               <li><p>Transportation</p></li>
               <li><p>Electric Power</p></li>
@@ -184,20 +239,20 @@
               <li><p>Commercial</p></li>
               <li><p>Residential</p></li>
             </ul>
-            
+
             <br />
             <p>
-              How you can see in this graphic the most percentage of emmissions
-              of carbon footprint come from:
-              <b>transportation, electric power and industry</b>, and those are
-              the main sources that we are trying to reduce with the ideas that
-              we provide in our website.
+              As you can see in this graphic the largest percentage of
+              emmissions come from:
+              <b>transportation, electric power and industrial sources</b>, and
+              These are the main areas that this website is looking to tackle in
+              the fight against carbon footprint.
             </p>
           </div>
           <div class="percentage__img-container">
             <img
               class="percentage__img-graphic"
-              src="https://cdn.glitch.me/387da31b-af7a-4e1a-92bf-2d58a57f066e%2FEscanciador%20de%20sidra%20(9)%20(1).png?v=1638050275758"
+              src="https://cdn.glitch.global/387da31b-af7a-4e1a-92bf-2d58a57f066e/Customer%20Service%20(2)-min.png?v=1643725490928"
             />
           </div>
         </div>
@@ -212,32 +267,37 @@
       <i class="fas fa-chevron-up top-icon"></i>
     </button>
 
-  <footer class="footer">
-     
-    <div class="footer__links">
-      
-      <div class="footer__citation-img-container">
-       <a href="/citations.html">
-        <img class="footer__citation-img" src="https://cdn.glitch.me/387da31b-af7a-4e1a-92bf-2d58a57f066e%2Fbook-16-64%20(1).png?v=1638749084435">
-        </a> 
-      </div>
-      <div class="footer__code-img-container">
-       <a href="https://github.com/Titan1315/Belding-Green-Iniative">
-         
-        <img class="footer__code-img" src="https://cdn.glitch.me/387da31b-af7a-4e1a-92bf-2d58a57f066e%2Fcode-2-xxl.png?v=1638839027702">
-        </a> 
-      </div>
-        <div class="footer__about-img-container">
-      <a href="/about-us.html">
-          
-      <img  class="footer__about-img" src="https://cdn.glitch.me/387da31b-af7a-4e1a-92bf-2d58a57f066e%2F640688.webp?v=1638748018016">
-      </a>
+     <footer class="footer">
+ 
+      <div class="footer__copyright">
+             <div class="footer__links">
+        <div class="footer__citation-img-container">
+          <a href="/citations.html">
+            <img
+              class="footer__citation-img"
+              src="https://cdn.glitch.me/387da31b-af7a-4e1a-92bf-2d58a57f066e%2Fbook-16-64%20(1).png?v=1638749084435"
+            />
+          </a>
         </div>
-    </div>
-    <div class="footer__copyright"> 
-      <p>
-        Keep Belding Green! © Belding BPA
-      </p>
+        <div class="footer__code-img-container">
+          <a target="blank" rel="nofollow" href="https://github.com/Titan1315/Belding-Green-Iniative">
+            <img
+              class="footer__code-img"
+              src="https://cdn.glitch.me/387da31b-af7a-4e1a-92bf-2d58a57f066e%2Fcode-2-xxl.png?v=1638839027702"
+            />
+          </a>
+        </div>
+        <div class="footer__about-img-container">
+          <a href="/about-us.html">
+            <img
+              class="footer__about-img"
+              src="https://cdn.glitch.me/387da31b-af7a-4e1a-92bf-2d58a57f066e%2F640688.webp?v=1638748018016"
+            />
+          </a>
+        </div>
+      </div>
+                <p>Keep Belding Green! © Belding BPA</p>
+
       </div>
     </footer>
   </body>

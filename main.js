@@ -1,6 +1,17 @@
+let hamburguer = document.querySelector(".hamburguer-menu");
+
+
+window.addEventListener('scroll', function()  {
+    let hamburguer = document.querySelector(".hamburger-menu");
+    let posicion = hamburguer.getBoundingClientRect().top;
+    console.log(posicion)
+     if (posicion < -80){
+       hamburguer.classList.add("hamburguer-menu-scroll")
+     } 
+})
+
 document = mybutton = document.getElementById("myBtn");
 
-// When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {
   scrollFunction();
 };
@@ -29,3 +40,6 @@ $(window).scroll(function() {
     btn.removeClass("show");
   }
 });
+
+
+
